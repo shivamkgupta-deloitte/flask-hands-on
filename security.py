@@ -12,6 +12,6 @@ def authenticate(username, password):
     if user and user.password == password:
         return user
 
-def idenity(payload):
-    user_id = payload['identiy']
+def identity(payload):
+    user_id = payload['identity']
     return userid_mapping.get(user_id, None)
